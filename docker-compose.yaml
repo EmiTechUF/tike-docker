@@ -1,0 +1,26 @@
+version: '3'
+services:
+  strapi:
+    build: ./app
+    environment:
+      DATABASE_CLIENT: postgres
+      DATABASE_NAME: tike
+      DATABASE_HOST: postgres
+      DATABASE_PORT: 5432
+      DATABASE_USERNAME: tike
+      DATABASE_PASSWORD: strapi
+    volumes:
+      - ./app:/srv/app
+    ports:
+      - '1337:1337'
+    depends_on:
+      - postgres
+
+  postgres:
+    image: postgres:13.2-alpine
+    environment:
+      POSTGRES_DB: tike
+      POSTGRES_USER: tike
+      POSTGRES_PASSWORD: strapi
+    volumes:
+      - ./data:/var/lib/postgresql/data
