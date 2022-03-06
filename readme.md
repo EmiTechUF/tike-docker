@@ -1,2 +1,5 @@
 git clone --recurse-submodules https://github.com/rajaomariajaona/tike-docker
-docker exec -i tike_postgres pg_restore -U tike -v -d tike < db.tar
+cd tike-docker
+docker-compose up
+docker exec -i tike_postgres psql -U tike -v -d tike < remove.sql
+docker exec -i tike_postgres psql -U tike -v -d tike < db.sql
