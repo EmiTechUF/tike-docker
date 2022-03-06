@@ -1,6 +1,7 @@
 version: '3'
 services:
   strapi:
+    container_name: tike_strapi
     build: ./app
     environment:
       DATABASE_CLIENT: postgres
@@ -17,6 +18,7 @@ services:
       - postgres
 
   postgres:
+    container_name: tike_postgres
     image: postgres:13.2-alpine
     environment:
       POSTGRES_DB: tike

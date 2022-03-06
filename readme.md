@@ -1,0 +1,1 @@
+docker exec -i tike_postgres pg_restore -U tike -v -d tike < db.tar
