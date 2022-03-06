@@ -5,6 +5,8 @@
 -- Dumped from database version 13.2
 -- Dumped by pg_dump version 13.2
 
+-- Started on 2022-03-06 17:06:25 UTC
+
 SET statement_timeout = 0;
 SET lock_timeout = 0;
 SET idle_in_transaction_session_timeout = 0;
@@ -21,6 +23,7 @@ SET default_tablespace = '';
 SET default_table_access_method = heap;
 
 --
+-- TOC entry 209 (class 1259 OID 16428)
 -- Name: admin_permissions; Type: TABLE; Schema: public; Owner: tike
 --
 
@@ -40,6 +43,7 @@ CREATE TABLE public.admin_permissions (
 ALTER TABLE public.admin_permissions OWNER TO tike;
 
 --
+-- TOC entry 208 (class 1259 OID 16426)
 -- Name: admin_permissions_id_seq; Type: SEQUENCE; Schema: public; Owner: tike
 --
 
@@ -55,6 +59,8 @@ CREATE SEQUENCE public.admin_permissions_id_seq
 ALTER TABLE public.admin_permissions_id_seq OWNER TO tike;
 
 --
+-- TOC entry 3345 (class 0 OID 0)
+-- Dependencies: 208
 -- Name: admin_permissions_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: tike
 --
 
@@ -62,6 +68,7 @@ ALTER SEQUENCE public.admin_permissions_id_seq OWNED BY public.admin_permissions
 
 
 --
+-- TOC entry 236 (class 1259 OID 16599)
 -- Name: admin_permissions_role_links; Type: TABLE; Schema: public; Owner: tike
 --
 
@@ -74,6 +81,7 @@ CREATE TABLE public.admin_permissions_role_links (
 ALTER TABLE public.admin_permissions_role_links OWNER TO tike;
 
 --
+-- TOC entry 213 (class 1259 OID 16454)
 -- Name: admin_roles; Type: TABLE; Schema: public; Owner: tike
 --
 
@@ -92,6 +100,7 @@ CREATE TABLE public.admin_roles (
 ALTER TABLE public.admin_roles OWNER TO tike;
 
 --
+-- TOC entry 212 (class 1259 OID 16452)
 -- Name: admin_roles_id_seq; Type: SEQUENCE; Schema: public; Owner: tike
 --
 
@@ -107,6 +116,8 @@ CREATE SEQUENCE public.admin_roles_id_seq
 ALTER TABLE public.admin_roles_id_seq OWNER TO tike;
 
 --
+-- TOC entry 3346 (class 0 OID 0)
+-- Dependencies: 212
 -- Name: admin_roles_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: tike
 --
 
@@ -114,6 +125,7 @@ ALTER SEQUENCE public.admin_roles_id_seq OWNED BY public.admin_roles.id;
 
 
 --
+-- TOC entry 211 (class 1259 OID 16441)
 -- Name: admin_users; Type: TABLE; Schema: public; Owner: tike
 --
 
@@ -139,6 +151,7 @@ CREATE TABLE public.admin_users (
 ALTER TABLE public.admin_users OWNER TO tike;
 
 --
+-- TOC entry 210 (class 1259 OID 16439)
 -- Name: admin_users_id_seq; Type: SEQUENCE; Schema: public; Owner: tike
 --
 
@@ -154,6 +167,8 @@ CREATE SEQUENCE public.admin_users_id_seq
 ALTER TABLE public.admin_users_id_seq OWNER TO tike;
 
 --
+-- TOC entry 3347 (class 0 OID 0)
+-- Dependencies: 210
 -- Name: admin_users_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: tike
 --
 
@@ -161,6 +176,7 @@ ALTER SEQUENCE public.admin_users_id_seq OWNED BY public.admin_users.id;
 
 
 --
+-- TOC entry 237 (class 1259 OID 16604)
 -- Name: admin_users_roles_links; Type: TABLE; Schema: public; Owner: tike
 --
 
@@ -173,6 +189,7 @@ CREATE TABLE public.admin_users_roles_links (
 ALTER TABLE public.admin_users_roles_links OWNER TO tike;
 
 --
+-- TOC entry 217 (class 1259 OID 16480)
 -- Name: buyers; Type: TABLE; Schema: public; Owner: tike
 --
 
@@ -195,6 +212,7 @@ CREATE TABLE public.buyers (
 ALTER TABLE public.buyers OWNER TO tike;
 
 --
+-- TOC entry 216 (class 1259 OID 16478)
 -- Name: buyers_id_seq; Type: SEQUENCE; Schema: public; Owner: tike
 --
 
@@ -210,6 +228,8 @@ CREATE SEQUENCE public.buyers_id_seq
 ALTER TABLE public.buyers_id_seq OWNER TO tike;
 
 --
+-- TOC entry 3348 (class 0 OID 0)
+-- Dependencies: 216
 -- Name: buyers_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: tike
 --
 
@@ -217,6 +237,7 @@ ALTER SEQUENCE public.buyers_id_seq OWNED BY public.buyers.id;
 
 
 --
+-- TOC entry 219 (class 1259 OID 16493)
 -- Name: buying_operations; Type: TABLE; Schema: public; Owner: tike
 --
 
@@ -232,6 +253,7 @@ CREATE TABLE public.buying_operations (
 ALTER TABLE public.buying_operations OWNER TO tike;
 
 --
+-- TOC entry 238 (class 1259 OID 16609)
 -- Name: buying_operations_buyer_links; Type: TABLE; Schema: public; Owner: tike
 --
 
@@ -244,6 +266,7 @@ CREATE TABLE public.buying_operations_buyer_links (
 ALTER TABLE public.buying_operations_buyer_links OWNER TO tike;
 
 --
+-- TOC entry 239 (class 1259 OID 16614)
 -- Name: buying_operations_event_links; Type: TABLE; Schema: public; Owner: tike
 --
 
@@ -256,6 +279,7 @@ CREATE TABLE public.buying_operations_event_links (
 ALTER TABLE public.buying_operations_event_links OWNER TO tike;
 
 --
+-- TOC entry 218 (class 1259 OID 16491)
 -- Name: buying_operations_id_seq; Type: SEQUENCE; Schema: public; Owner: tike
 --
 
@@ -271,6 +295,8 @@ CREATE SEQUENCE public.buying_operations_id_seq
 ALTER TABLE public.buying_operations_id_seq OWNER TO tike;
 
 --
+-- TOC entry 3349 (class 0 OID 0)
+-- Dependencies: 218
 -- Name: buying_operations_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: tike
 --
 
@@ -278,6 +304,7 @@ ALTER SEQUENCE public.buying_operations_id_seq OWNED BY public.buying_operations
 
 
 --
+-- TOC entry 240 (class 1259 OID 16619)
 -- Name: buying_operations_ticket_links; Type: TABLE; Schema: public; Owner: tike
 --
 
@@ -290,6 +317,7 @@ CREATE TABLE public.buying_operations_ticket_links (
 ALTER TABLE public.buying_operations_ticket_links OWNER TO tike;
 
 --
+-- TOC entry 223 (class 1259 OID 16516)
 -- Name: event_types; Type: TABLE; Schema: public; Owner: tike
 --
 
@@ -306,6 +334,7 @@ CREATE TABLE public.event_types (
 ALTER TABLE public.event_types OWNER TO tike;
 
 --
+-- TOC entry 222 (class 1259 OID 16514)
 -- Name: event_types_id_seq; Type: SEQUENCE; Schema: public; Owner: tike
 --
 
@@ -321,6 +350,8 @@ CREATE SEQUENCE public.event_types_id_seq
 ALTER TABLE public.event_types_id_seq OWNER TO tike;
 
 --
+-- TOC entry 3350 (class 0 OID 0)
+-- Dependencies: 222
 -- Name: event_types_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: tike
 --
 
@@ -328,6 +359,7 @@ ALTER SEQUENCE public.event_types_id_seq OWNED BY public.event_types.id;
 
 
 --
+-- TOC entry 221 (class 1259 OID 16503)
 -- Name: events; Type: TABLE; Schema: public; Owner: tike
 --
 
@@ -346,6 +378,7 @@ CREATE TABLE public.events (
 ALTER TABLE public.events OWNER TO tike;
 
 --
+-- TOC entry 241 (class 1259 OID 16624)
 -- Name: events_event_type_links; Type: TABLE; Schema: public; Owner: tike
 --
 
@@ -358,6 +391,7 @@ CREATE TABLE public.events_event_type_links (
 ALTER TABLE public.events_event_type_links OWNER TO tike;
 
 --
+-- TOC entry 220 (class 1259 OID 16501)
 -- Name: events_id_seq; Type: SEQUENCE; Schema: public; Owner: tike
 --
 
@@ -373,6 +407,8 @@ CREATE SEQUENCE public.events_id_seq
 ALTER TABLE public.events_id_seq OWNER TO tike;
 
 --
+-- TOC entry 3351 (class 0 OID 0)
+-- Dependencies: 220
 -- Name: events_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: tike
 --
 
@@ -380,6 +416,7 @@ ALTER SEQUENCE public.events_id_seq OWNED BY public.events.id;
 
 
 --
+-- TOC entry 225 (class 1259 OID 16526)
 -- Name: files; Type: TABLE; Schema: public; Owner: tike
 --
 
@@ -409,6 +446,7 @@ CREATE TABLE public.files (
 ALTER TABLE public.files OWNER TO tike;
 
 --
+-- TOC entry 224 (class 1259 OID 16524)
 -- Name: files_id_seq; Type: SEQUENCE; Schema: public; Owner: tike
 --
 
@@ -424,6 +462,8 @@ CREATE SEQUENCE public.files_id_seq
 ALTER TABLE public.files_id_seq OWNER TO tike;
 
 --
+-- TOC entry 3352 (class 0 OID 0)
+-- Dependencies: 224
 -- Name: files_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: tike
 --
 
@@ -431,6 +471,7 @@ ALTER SEQUENCE public.files_id_seq OWNED BY public.files.id;
 
 
 --
+-- TOC entry 242 (class 1259 OID 16629)
 -- Name: files_related_morphs; Type: TABLE; Schema: public; Owner: tike
 --
 
@@ -446,6 +487,7 @@ CREATE TABLE public.files_related_morphs (
 ALTER TABLE public.files_related_morphs OWNER TO tike;
 
 --
+-- TOC entry 229 (class 1259 OID 16552)
 -- Name: i18n_locale; Type: TABLE; Schema: public; Owner: tike
 --
 
@@ -463,6 +505,7 @@ CREATE TABLE public.i18n_locale (
 ALTER TABLE public.i18n_locale OWNER TO tike;
 
 --
+-- TOC entry 228 (class 1259 OID 16550)
 -- Name: i18n_locale_id_seq; Type: SEQUENCE; Schema: public; Owner: tike
 --
 
@@ -478,6 +521,8 @@ CREATE SEQUENCE public.i18n_locale_id_seq
 ALTER TABLE public.i18n_locale_id_seq OWNER TO tike;
 
 --
+-- TOC entry 3353 (class 0 OID 0)
+-- Dependencies: 228
 -- Name: i18n_locale_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: tike
 --
 
@@ -485,6 +530,7 @@ ALTER SEQUENCE public.i18n_locale_id_seq OWNED BY public.i18n_locale.id;
 
 
 --
+-- TOC entry 215 (class 1259 OID 16467)
 -- Name: strapi_api_tokens; Type: TABLE; Schema: public; Owner: tike
 --
 
@@ -504,6 +550,7 @@ CREATE TABLE public.strapi_api_tokens (
 ALTER TABLE public.strapi_api_tokens OWNER TO tike;
 
 --
+-- TOC entry 214 (class 1259 OID 16465)
 -- Name: strapi_api_tokens_id_seq; Type: SEQUENCE; Schema: public; Owner: tike
 --
 
@@ -519,6 +566,8 @@ CREATE SEQUENCE public.strapi_api_tokens_id_seq
 ALTER TABLE public.strapi_api_tokens_id_seq OWNER TO tike;
 
 --
+-- TOC entry 3354 (class 0 OID 0)
+-- Dependencies: 214
 -- Name: strapi_api_tokens_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: tike
 --
 
@@ -526,6 +575,7 @@ ALTER SEQUENCE public.strapi_api_tokens_id_seq OWNED BY public.strapi_api_tokens
 
 
 --
+-- TOC entry 205 (class 1259 OID 16406)
 -- Name: strapi_core_store_settings; Type: TABLE; Schema: public; Owner: tike
 --
 
@@ -542,6 +592,7 @@ CREATE TABLE public.strapi_core_store_settings (
 ALTER TABLE public.strapi_core_store_settings OWNER TO tike;
 
 --
+-- TOC entry 204 (class 1259 OID 16404)
 -- Name: strapi_core_store_settings_id_seq; Type: SEQUENCE; Schema: public; Owner: tike
 --
 
@@ -557,6 +608,8 @@ CREATE SEQUENCE public.strapi_core_store_settings_id_seq
 ALTER TABLE public.strapi_core_store_settings_id_seq OWNER TO tike;
 
 --
+-- TOC entry 3355 (class 0 OID 0)
+-- Dependencies: 204
 -- Name: strapi_core_store_settings_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: tike
 --
 
@@ -564,6 +617,7 @@ ALTER SEQUENCE public.strapi_core_store_settings_id_seq OWNED BY public.strapi_c
 
 
 --
+-- TOC entry 203 (class 1259 OID 16395)
 -- Name: strapi_database_schema; Type: TABLE; Schema: public; Owner: tike
 --
 
@@ -578,6 +632,7 @@ CREATE TABLE public.strapi_database_schema (
 ALTER TABLE public.strapi_database_schema OWNER TO tike;
 
 --
+-- TOC entry 202 (class 1259 OID 16393)
 -- Name: strapi_database_schema_id_seq; Type: SEQUENCE; Schema: public; Owner: tike
 --
 
@@ -593,6 +648,8 @@ CREATE SEQUENCE public.strapi_database_schema_id_seq
 ALTER TABLE public.strapi_database_schema_id_seq OWNER TO tike;
 
 --
+-- TOC entry 3356 (class 0 OID 0)
+-- Dependencies: 202
 -- Name: strapi_database_schema_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: tike
 --
 
@@ -600,6 +657,7 @@ ALTER SEQUENCE public.strapi_database_schema_id_seq OWNED BY public.strapi_datab
 
 
 --
+-- TOC entry 201 (class 1259 OID 16387)
 -- Name: strapi_migrations; Type: TABLE; Schema: public; Owner: tike
 --
 
@@ -613,6 +671,7 @@ CREATE TABLE public.strapi_migrations (
 ALTER TABLE public.strapi_migrations OWNER TO tike;
 
 --
+-- TOC entry 200 (class 1259 OID 16385)
 -- Name: strapi_migrations_id_seq; Type: SEQUENCE; Schema: public; Owner: tike
 --
 
@@ -628,6 +687,8 @@ CREATE SEQUENCE public.strapi_migrations_id_seq
 ALTER TABLE public.strapi_migrations_id_seq OWNER TO tike;
 
 --
+-- TOC entry 3357 (class 0 OID 0)
+-- Dependencies: 200
 -- Name: strapi_migrations_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: tike
 --
 
@@ -635,6 +696,7 @@ ALTER SEQUENCE public.strapi_migrations_id_seq OWNED BY public.strapi_migrations
 
 
 --
+-- TOC entry 207 (class 1259 OID 16417)
 -- Name: strapi_webhooks; Type: TABLE; Schema: public; Owner: tike
 --
 
@@ -651,6 +713,7 @@ CREATE TABLE public.strapi_webhooks (
 ALTER TABLE public.strapi_webhooks OWNER TO tike;
 
 --
+-- TOC entry 206 (class 1259 OID 16415)
 -- Name: strapi_webhooks_id_seq; Type: SEQUENCE; Schema: public; Owner: tike
 --
 
@@ -666,6 +729,8 @@ CREATE SEQUENCE public.strapi_webhooks_id_seq
 ALTER TABLE public.strapi_webhooks_id_seq OWNER TO tike;
 
 --
+-- TOC entry 3358 (class 0 OID 0)
+-- Dependencies: 206
 -- Name: strapi_webhooks_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: tike
 --
 
@@ -673,6 +738,7 @@ ALTER SEQUENCE public.strapi_webhooks_id_seq OWNED BY public.strapi_webhooks.id;
 
 
 --
+-- TOC entry 227 (class 1259 OID 16539)
 -- Name: tickets; Type: TABLE; Schema: public; Owner: tike
 --
 
@@ -691,6 +757,7 @@ CREATE TABLE public.tickets (
 ALTER TABLE public.tickets OWNER TO tike;
 
 --
+-- TOC entry 226 (class 1259 OID 16537)
 -- Name: tickets_id_seq; Type: SEQUENCE; Schema: public; Owner: tike
 --
 
@@ -706,6 +773,8 @@ CREATE SEQUENCE public.tickets_id_seq
 ALTER TABLE public.tickets_id_seq OWNER TO tike;
 
 --
+-- TOC entry 3359 (class 0 OID 0)
+-- Dependencies: 226
 -- Name: tickets_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: tike
 --
 
@@ -713,6 +782,7 @@ ALTER SEQUENCE public.tickets_id_seq OWNED BY public.tickets.id;
 
 
 --
+-- TOC entry 231 (class 1259 OID 16565)
 -- Name: up_permissions; Type: TABLE; Schema: public; Owner: tike
 --
 
@@ -729,6 +799,7 @@ CREATE TABLE public.up_permissions (
 ALTER TABLE public.up_permissions OWNER TO tike;
 
 --
+-- TOC entry 230 (class 1259 OID 16563)
 -- Name: up_permissions_id_seq; Type: SEQUENCE; Schema: public; Owner: tike
 --
 
@@ -744,6 +815,8 @@ CREATE SEQUENCE public.up_permissions_id_seq
 ALTER TABLE public.up_permissions_id_seq OWNER TO tike;
 
 --
+-- TOC entry 3360 (class 0 OID 0)
+-- Dependencies: 230
 -- Name: up_permissions_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: tike
 --
 
@@ -751,6 +824,7 @@ ALTER SEQUENCE public.up_permissions_id_seq OWNED BY public.up_permissions.id;
 
 
 --
+-- TOC entry 243 (class 1259 OID 16636)
 -- Name: up_permissions_role_links; Type: TABLE; Schema: public; Owner: tike
 --
 
@@ -763,6 +837,7 @@ CREATE TABLE public.up_permissions_role_links (
 ALTER TABLE public.up_permissions_role_links OWNER TO tike;
 
 --
+-- TOC entry 233 (class 1259 OID 16575)
 -- Name: up_roles; Type: TABLE; Schema: public; Owner: tike
 --
 
@@ -781,6 +856,7 @@ CREATE TABLE public.up_roles (
 ALTER TABLE public.up_roles OWNER TO tike;
 
 --
+-- TOC entry 232 (class 1259 OID 16573)
 -- Name: up_roles_id_seq; Type: SEQUENCE; Schema: public; Owner: tike
 --
 
@@ -796,6 +872,8 @@ CREATE SEQUENCE public.up_roles_id_seq
 ALTER TABLE public.up_roles_id_seq OWNER TO tike;
 
 --
+-- TOC entry 3361 (class 0 OID 0)
+-- Dependencies: 232
 -- Name: up_roles_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: tike
 --
 
@@ -803,6 +881,7 @@ ALTER SEQUENCE public.up_roles_id_seq OWNED BY public.up_roles.id;
 
 
 --
+-- TOC entry 235 (class 1259 OID 16588)
 -- Name: up_users; Type: TABLE; Schema: public; Owner: tike
 --
 
@@ -827,6 +906,7 @@ CREATE TABLE public.up_users (
 ALTER TABLE public.up_users OWNER TO tike;
 
 --
+-- TOC entry 246 (class 1259 OID 16651)
 -- Name: up_users_events_to_check_links; Type: TABLE; Schema: public; Owner: tike
 --
 
@@ -839,6 +919,7 @@ CREATE TABLE public.up_users_events_to_check_links (
 ALTER TABLE public.up_users_events_to_check_links OWNER TO tike;
 
 --
+-- TOC entry 245 (class 1259 OID 16646)
 -- Name: up_users_events_to_sell_links; Type: TABLE; Schema: public; Owner: tike
 --
 
@@ -851,6 +932,7 @@ CREATE TABLE public.up_users_events_to_sell_links (
 ALTER TABLE public.up_users_events_to_sell_links OWNER TO tike;
 
 --
+-- TOC entry 234 (class 1259 OID 16586)
 -- Name: up_users_id_seq; Type: SEQUENCE; Schema: public; Owner: tike
 --
 
@@ -866,6 +948,8 @@ CREATE SEQUENCE public.up_users_id_seq
 ALTER TABLE public.up_users_id_seq OWNER TO tike;
 
 --
+-- TOC entry 3362 (class 0 OID 0)
+-- Dependencies: 234
 -- Name: up_users_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: tike
 --
 
@@ -873,6 +957,7 @@ ALTER SEQUENCE public.up_users_id_seq OWNED BY public.up_users.id;
 
 
 --
+-- TOC entry 244 (class 1259 OID 16641)
 -- Name: up_users_role_links; Type: TABLE; Schema: public; Owner: tike
 --
 
@@ -885,6 +970,7 @@ CREATE TABLE public.up_users_role_links (
 ALTER TABLE public.up_users_role_links OWNER TO tike;
 
 --
+-- TOC entry 3015 (class 2604 OID 16431)
 -- Name: admin_permissions id; Type: DEFAULT; Schema: public; Owner: tike
 --
 
@@ -892,6 +978,7 @@ ALTER TABLE ONLY public.admin_permissions ALTER COLUMN id SET DEFAULT nextval('p
 
 
 --
+-- TOC entry 3017 (class 2604 OID 16457)
 -- Name: admin_roles id; Type: DEFAULT; Schema: public; Owner: tike
 --
 
@@ -899,6 +986,7 @@ ALTER TABLE ONLY public.admin_roles ALTER COLUMN id SET DEFAULT nextval('public.
 
 
 --
+-- TOC entry 3016 (class 2604 OID 16444)
 -- Name: admin_users id; Type: DEFAULT; Schema: public; Owner: tike
 --
 
@@ -906,6 +994,7 @@ ALTER TABLE ONLY public.admin_users ALTER COLUMN id SET DEFAULT nextval('public.
 
 
 --
+-- TOC entry 3019 (class 2604 OID 16483)
 -- Name: buyers id; Type: DEFAULT; Schema: public; Owner: tike
 --
 
@@ -913,6 +1002,7 @@ ALTER TABLE ONLY public.buyers ALTER COLUMN id SET DEFAULT nextval('public.buyer
 
 
 --
+-- TOC entry 3020 (class 2604 OID 16496)
 -- Name: buying_operations id; Type: DEFAULT; Schema: public; Owner: tike
 --
 
@@ -920,6 +1010,7 @@ ALTER TABLE ONLY public.buying_operations ALTER COLUMN id SET DEFAULT nextval('p
 
 
 --
+-- TOC entry 3022 (class 2604 OID 16519)
 -- Name: event_types id; Type: DEFAULT; Schema: public; Owner: tike
 --
 
@@ -927,6 +1018,7 @@ ALTER TABLE ONLY public.event_types ALTER COLUMN id SET DEFAULT nextval('public.
 
 
 --
+-- TOC entry 3021 (class 2604 OID 16506)
 -- Name: events id; Type: DEFAULT; Schema: public; Owner: tike
 --
 
@@ -934,6 +1026,7 @@ ALTER TABLE ONLY public.events ALTER COLUMN id SET DEFAULT nextval('public.event
 
 
 --
+-- TOC entry 3023 (class 2604 OID 16529)
 -- Name: files id; Type: DEFAULT; Schema: public; Owner: tike
 --
 
@@ -941,6 +1034,7 @@ ALTER TABLE ONLY public.files ALTER COLUMN id SET DEFAULT nextval('public.files_
 
 
 --
+-- TOC entry 3025 (class 2604 OID 16555)
 -- Name: i18n_locale id; Type: DEFAULT; Schema: public; Owner: tike
 --
 
@@ -948,6 +1042,7 @@ ALTER TABLE ONLY public.i18n_locale ALTER COLUMN id SET DEFAULT nextval('public.
 
 
 --
+-- TOC entry 3018 (class 2604 OID 16470)
 -- Name: strapi_api_tokens id; Type: DEFAULT; Schema: public; Owner: tike
 --
 
@@ -955,6 +1050,7 @@ ALTER TABLE ONLY public.strapi_api_tokens ALTER COLUMN id SET DEFAULT nextval('p
 
 
 --
+-- TOC entry 3013 (class 2604 OID 16409)
 -- Name: strapi_core_store_settings id; Type: DEFAULT; Schema: public; Owner: tike
 --
 
@@ -962,6 +1058,7 @@ ALTER TABLE ONLY public.strapi_core_store_settings ALTER COLUMN id SET DEFAULT n
 
 
 --
+-- TOC entry 3012 (class 2604 OID 16398)
 -- Name: strapi_database_schema id; Type: DEFAULT; Schema: public; Owner: tike
 --
 
@@ -969,6 +1066,7 @@ ALTER TABLE ONLY public.strapi_database_schema ALTER COLUMN id SET DEFAULT nextv
 
 
 --
+-- TOC entry 3011 (class 2604 OID 16390)
 -- Name: strapi_migrations id; Type: DEFAULT; Schema: public; Owner: tike
 --
 
@@ -976,6 +1074,7 @@ ALTER TABLE ONLY public.strapi_migrations ALTER COLUMN id SET DEFAULT nextval('p
 
 
 --
+-- TOC entry 3014 (class 2604 OID 16420)
 -- Name: strapi_webhooks id; Type: DEFAULT; Schema: public; Owner: tike
 --
 
@@ -983,6 +1082,7 @@ ALTER TABLE ONLY public.strapi_webhooks ALTER COLUMN id SET DEFAULT nextval('pub
 
 
 --
+-- TOC entry 3024 (class 2604 OID 16542)
 -- Name: tickets id; Type: DEFAULT; Schema: public; Owner: tike
 --
 
@@ -990,6 +1090,7 @@ ALTER TABLE ONLY public.tickets ALTER COLUMN id SET DEFAULT nextval('public.tick
 
 
 --
+-- TOC entry 3026 (class 2604 OID 16568)
 -- Name: up_permissions id; Type: DEFAULT; Schema: public; Owner: tike
 --
 
@@ -997,6 +1098,7 @@ ALTER TABLE ONLY public.up_permissions ALTER COLUMN id SET DEFAULT nextval('publ
 
 
 --
+-- TOC entry 3027 (class 2604 OID 16578)
 -- Name: up_roles id; Type: DEFAULT; Schema: public; Owner: tike
 --
 
@@ -1004,6 +1106,7 @@ ALTER TABLE ONLY public.up_roles ALTER COLUMN id SET DEFAULT nextval('public.up_
 
 
 --
+-- TOC entry 3028 (class 2604 OID 16591)
 -- Name: up_users id; Type: DEFAULT; Schema: public; Owner: tike
 --
 
@@ -1011,6 +1114,8 @@ ALTER TABLE ONLY public.up_users ALTER COLUMN id SET DEFAULT nextval('public.up_
 
 
 --
+-- TOC entry 3302 (class 0 OID 16428)
+-- Dependencies: 209
 -- Data for Name: admin_permissions; Type: TABLE DATA; Schema: public; Owner: tike
 --
 
@@ -1141,6 +1246,8 @@ COPY public.admin_permissions (id, action, subject, properties, conditions, crea
 
 
 --
+-- TOC entry 3329 (class 0 OID 16599)
+-- Dependencies: 236
 -- Data for Name: admin_permissions_role_links; Type: TABLE DATA; Schema: public; Owner: tike
 --
 
@@ -1271,6 +1378,8 @@ COPY public.admin_permissions_role_links (permission_id, role_id) FROM stdin;
 
 
 --
+-- TOC entry 3306 (class 0 OID 16454)
+-- Dependencies: 213
 -- Data for Name: admin_roles; Type: TABLE DATA; Schema: public; Owner: tike
 --
 
@@ -1282,6 +1391,8 @@ COPY public.admin_roles (id, name, code, description, created_at, updated_at, cr
 
 
 --
+-- TOC entry 3304 (class 0 OID 16441)
+-- Dependencies: 211
 -- Data for Name: admin_users; Type: TABLE DATA; Schema: public; Owner: tike
 --
 
@@ -1292,6 +1403,8 @@ COPY public.admin_users (id, firstname, lastname, username, email, password, res
 
 
 --
+-- TOC entry 3330 (class 0 OID 16604)
+-- Dependencies: 237
 -- Data for Name: admin_users_roles_links; Type: TABLE DATA; Schema: public; Owner: tike
 --
 
@@ -1302,6 +1415,8 @@ COPY public.admin_users_roles_links (user_id, role_id) FROM stdin;
 
 
 --
+-- TOC entry 3310 (class 0 OID 16480)
+-- Dependencies: 217
 -- Data for Name: buyers; Type: TABLE DATA; Schema: public; Owner: tike
 --
 
@@ -1310,6 +1425,8 @@ COPY public.buyers (id, firstname, lastname, email, photo, note, matricule, cin,
 
 
 --
+-- TOC entry 3312 (class 0 OID 16493)
+-- Dependencies: 219
 -- Data for Name: buying_operations; Type: TABLE DATA; Schema: public; Owner: tike
 --
 
@@ -1318,6 +1435,8 @@ COPY public.buying_operations (id, created_at, updated_at, created_by_id, update
 
 
 --
+-- TOC entry 3331 (class 0 OID 16609)
+-- Dependencies: 238
 -- Data for Name: buying_operations_buyer_links; Type: TABLE DATA; Schema: public; Owner: tike
 --
 
@@ -1326,6 +1445,8 @@ COPY public.buying_operations_buyer_links (buying_operation_id, buyer_id) FROM s
 
 
 --
+-- TOC entry 3332 (class 0 OID 16614)
+-- Dependencies: 239
 -- Data for Name: buying_operations_event_links; Type: TABLE DATA; Schema: public; Owner: tike
 --
 
@@ -1334,6 +1455,8 @@ COPY public.buying_operations_event_links (buying_operation_id, event_id) FROM s
 
 
 --
+-- TOC entry 3333 (class 0 OID 16619)
+-- Dependencies: 240
 -- Data for Name: buying_operations_ticket_links; Type: TABLE DATA; Schema: public; Owner: tike
 --
 
@@ -1342,6 +1465,8 @@ COPY public.buying_operations_ticket_links (buying_operation_id, ticket_id) FROM
 
 
 --
+-- TOC entry 3316 (class 0 OID 16516)
+-- Dependencies: 223
 -- Data for Name: event_types; Type: TABLE DATA; Schema: public; Owner: tike
 --
 
@@ -1351,6 +1476,8 @@ COPY public.event_types (id, name, created_at, updated_at, created_by_id, update
 
 
 --
+-- TOC entry 3314 (class 0 OID 16503)
+-- Dependencies: 221
 -- Data for Name: events; Type: TABLE DATA; Schema: public; Owner: tike
 --
 
@@ -1361,6 +1488,8 @@ COPY public.events (id, name, datetime, location, created_at, updated_at, create
 
 
 --
+-- TOC entry 3334 (class 0 OID 16624)
+-- Dependencies: 241
 -- Data for Name: events_event_type_links; Type: TABLE DATA; Schema: public; Owner: tike
 --
 
@@ -1371,6 +1500,8 @@ COPY public.events_event_type_links (event_id, event_type_id) FROM stdin;
 
 
 --
+-- TOC entry 3318 (class 0 OID 16526)
+-- Dependencies: 225
 -- Data for Name: files; Type: TABLE DATA; Schema: public; Owner: tike
 --
 
@@ -1379,6 +1510,8 @@ COPY public.files (id, name, alternative_text, caption, width, height, formats, 
 
 
 --
+-- TOC entry 3335 (class 0 OID 16629)
+-- Dependencies: 242
 -- Data for Name: files_related_morphs; Type: TABLE DATA; Schema: public; Owner: tike
 --
 
@@ -1387,6 +1520,8 @@ COPY public.files_related_morphs (file_id, related_id, related_type, field, "ord
 
 
 --
+-- TOC entry 3322 (class 0 OID 16552)
+-- Dependencies: 229
 -- Data for Name: i18n_locale; Type: TABLE DATA; Schema: public; Owner: tike
 --
 
@@ -1396,6 +1531,8 @@ COPY public.i18n_locale (id, name, code, created_at, updated_at, created_by_id, 
 
 
 --
+-- TOC entry 3308 (class 0 OID 16467)
+-- Dependencies: 215
 -- Data for Name: strapi_api_tokens; Type: TABLE DATA; Schema: public; Owner: tike
 --
 
@@ -1404,6 +1541,8 @@ COPY public.strapi_api_tokens (id, name, description, type, access_key, created_
 
 
 --
+-- TOC entry 3298 (class 0 OID 16406)
+-- Dependencies: 205
 -- Data for Name: strapi_core_store_settings; Type: TABLE DATA; Schema: public; Owner: tike
 --
 
@@ -1434,6 +1573,8 @@ COPY public.strapi_core_store_settings (id, key, value, type, environment, tag) 
 
 
 --
+-- TOC entry 3296 (class 0 OID 16395)
+-- Dependencies: 203
 -- Data for Name: strapi_database_schema; Type: TABLE DATA; Schema: public; Owner: tike
 --
 
@@ -1443,6 +1584,8 @@ COPY public.strapi_database_schema (id, schema, "time", hash) FROM stdin;
 
 
 --
+-- TOC entry 3294 (class 0 OID 16387)
+-- Dependencies: 201
 -- Data for Name: strapi_migrations; Type: TABLE DATA; Schema: public; Owner: tike
 --
 
@@ -1451,6 +1594,8 @@ COPY public.strapi_migrations (id, name, "time") FROM stdin;
 
 
 --
+-- TOC entry 3300 (class 0 OID 16417)
+-- Dependencies: 207
 -- Data for Name: strapi_webhooks; Type: TABLE DATA; Schema: public; Owner: tike
 --
 
@@ -1459,6 +1604,8 @@ COPY public.strapi_webhooks (id, name, url, headers, events, enabled) FROM stdin
 
 
 --
+-- TOC entry 3320 (class 0 OID 16539)
+-- Dependencies: 227
 -- Data for Name: tickets; Type: TABLE DATA; Schema: public; Owner: tike
 --
 
@@ -1467,6 +1614,8 @@ COPY public.tickets (id, uuid, description, taken, created_at, updated_at, creat
 
 
 --
+-- TOC entry 3324 (class 0 OID 16565)
+-- Dependencies: 231
 -- Data for Name: up_permissions; Type: TABLE DATA; Schema: public; Owner: tike
 --
 
@@ -1497,6 +1646,8 @@ COPY public.up_permissions (id, action, created_at, updated_at, created_by_id, u
 
 
 --
+-- TOC entry 3336 (class 0 OID 16636)
+-- Dependencies: 243
 -- Data for Name: up_permissions_role_links; Type: TABLE DATA; Schema: public; Owner: tike
 --
 
@@ -1527,6 +1678,8 @@ COPY public.up_permissions_role_links (permission_id, role_id) FROM stdin;
 
 
 --
+-- TOC entry 3326 (class 0 OID 16575)
+-- Dependencies: 233
 -- Data for Name: up_roles; Type: TABLE DATA; Schema: public; Owner: tike
 --
 
@@ -1539,44 +1692,144 @@ COPY public.up_roles (id, name, description, type, created_at, updated_at, creat
 
 
 --
+-- TOC entry 3328 (class 0 OID 16588)
+-- Dependencies: 235
 -- Data for Name: up_users; Type: TABLE DATA; Schema: public; Owner: tike
 --
 
 COPY public.up_users (id, username, email, provider, password, reset_password_token, confirmation_token, confirmed, blocked, note, created_at, updated_at, created_by_id, updated_by_id) FROM stdin;
-1	m1sigd	m1sigd@gmail.com	local	$2a$10$zHZ4cJVsSnTuY5MrmG.LYulkF7qWL1kxFBLYqR.jLoVgZQOtinK42	\N	\N	t	f	M1:SIGD:C	2022-03-06 13:44:05.261	2022-03-06 13:44:05.261	1	1
-2	m2sigd	m2sigd@gmail.com	local	$2a$10$HaSFaLwX68pTXrsmBcIw4eM9SM1tulLhlen225vpD1JlM5cPDZX5G	\N	\N	t	f	M2:SIGD:C	2022-03-06 13:44:40.422	2022-03-06 13:44:40.422	1	1
-3	da2i	da2i@gmail.com	local	$2a$10$Av6EzTRdWwCBSfMyE17rrOmFFshp84aWxKPUF9gU1GxcwVqJ/kfx.	\N	\N	t	f	DA2I	2022-03-06 13:45:33.107	2022-03-06 13:45:33.107	1	1
+5	aes	aes@gmail.com	local	$2a$10$dMJcr6zL44qGMN3H7v9x..0VtaBjUUGNdQwiy0P8QSLcI6oCbK2ba	\N	\N	t	f	AES	2022-03-06 16:27:32.04	2022-03-06 16:42:34.637	1	1
+3	da2i	da2i@gmail.com	local	$2a$10$O1Bubp0PYl0EH9iHqRfJYebxs30.zXg6jnme/zFKFOWD8ey3Y/ZiG	\N	\N	t	f	DA2I	2022-03-06 13:45:33.107	2022-03-06 16:42:48.604	1	1
+4	rpm	rpm@gmail.com	local	$2a$10$rTrHU5.Sq6jedeZsI.QyjuhIvmFvrTja81vkV8P16iIfrMdThc3bq	\N	\N	t	f	RPM	2022-03-06 16:26:40.845	2022-03-06 16:43:04.071	1	1
+9	l1aes21	l1aes21@gmail.com	local	$2a$10$oMlbRkmTfk04pkESYesOCe8H5OXc4L99Vw46kis2mQyHrztA4yBr6	\N	\N	t	f	L1:AES:21	2022-03-06 16:44:09.307	2022-03-06 16:44:09.307	1	1
+10	l1aesc	l1aesc@gmail.com	local	$2a$10$uPkfRYi4Ls5mMWZE0xdd7uQ2szVcuklatp10bjIJ4A1wTudAvyfC6	\N	\N	t	f	L1:AES:C	2022-03-06 16:45:08.813	2022-03-06 16:45:08.813	1	1
+11	l1aesh	l1aesh@gmail.com	local	$2a$10$bUTgsafaILD6cYd10S3dbubBOgleyX6s/wll/biJtg/.WYzusp8RW	\N	\N	t	f	L1:AES:H	2022-03-06 16:45:28.301	2022-03-06 16:45:28.301	1	1
+12	l1rpmc	l1rpmc@gmail.com	local	$2a$10$e.rgfgNH0cssAu.C6ID/T.t3JnhHXLIqx/dSTvQcThWfeg8iWDe/C	\N	\N	t	f	L1:RPM:C	2022-03-06 16:47:25.311	2022-03-06 16:47:25.311	1	1
+13	l1rpm21	l1rpm21@gmail.com	local	$2a$10$qQE4nAP6yHp84TyCk0MBTuThZ4NHiAV.4xUg/xTEyl.jewHzhq1QG	\N	\N	t	f	L1:RPM:21	2022-03-06 16:47:53.267	2022-03-06 16:47:53.267	1	1
+14	l1rpmh	l1rpmh@gmail.com	local	$2a$10$.WGs.9Dypo9ojt9znKOX2eO6XBj5nPSLDwad3fvpH1QB5btc2Lwpu	\N	\N	t	f	L1:RPM:H	2022-03-06 16:48:18.266	2022-03-06 16:48:18.266	1	1
+15	l1da2i21	l1da2i21@gmail.com	local	$2a$10$8vwmxjkM7cSXOsB5zhBhzet90tDskMl.U7XrRg0S1SghceNzYvcuy	\N	\N	t	f	L1:DA2I:21	2022-03-06 16:49:05.496	2022-03-06 16:49:05.496	1	1
+16	l1da2ic	l1da2ic@gmail.com	local	$2a$10$9LMC3LQ8iwx6hn8MVW7yiO27HplpFirhlj1OvJQm9zzbFALzZGlru	\N	\N	t	f	L1:DA2I:C	2022-03-06 16:49:31.29	2022-03-06 16:49:31.29	1	1
+17	l1da2ih	l1da2ih@gmail.com	local	$2a$10$dKkAdmze6Gzn/xdf/8MM8erpB5/rTsaYLrF2aUkL.k3J8RHWfx2hO	\N	\N	t	f	L1:DA2I:H	2022-03-06 16:49:58.339	2022-03-06 16:49:58.339	1	1
+18	l2aesc	l2aesc@gmail.com	local	$2a$10$M77uP3z1mB9EEWBHd/cMGOJMbpzBatCjsS4YnRor/lQ.GQeNy1GDy	\N	\N	t	f	L2:AES:C	2022-03-06 16:50:27.945	2022-03-06 16:50:27.945	1	1
+19	l2rpmc	l2rpmc@gmail.com	local	$2a$10$8tWlmHYjFJOcpuLG7YU.qOtwxNTLoBzNVafuUR52LMQrEmjz4ptmm	\N	\N	t	f	L2:RPM:C	2022-03-06 16:51:07.443	2022-03-06 16:51:07.443	1	1
+20	l2da2ic	l2da2ic@gmail.com	local	$2a$10$HvtCqiTlUN/l0y5BrzNOdOqJ7iti/KcvN9fa2tayOlrRYVqaOAg.a	\N	\N	t	f	L2:DA2I:C	2022-03-06 16:51:43.761	2022-03-06 16:51:43.761	1	1
+21	l2aesh	l2aesh@gmail.com	local	$2a$10$4fXToHxlwBHEvw5TIa5XSehjwju4fGQOly3dv.p8QIuWeYsz/DpJC	\N	\N	t	f	L2:AES:H	2022-03-06 16:52:25	2022-03-06 16:52:25	1	1
+22	l2rpmh	l2rpmh@gmail.com	local	$2a$10$47CoHlSCabxnhf.wo3rr1uCN5QIODldMFVFiygHasxWgeYFPX9c3O	\N	\N	t	f	L2:RPM:H	2022-03-06 16:52:53.893	2022-03-06 16:52:53.893	1	1
+23	l2da2ih	l2da2ih@gmail.com	local	$2a$10$KbtS/3UX4.CQbmZkMm4.EuAMW64tq6PArqk3Qq.PnPfLSKU2aipzC	\N	\N	t	f	L2:DA2I:H	2022-03-06 16:53:20.321	2022-03-06 16:53:20.321	1	1
+6	l3aesc	l3aesc@gmail.com	local	$2a$10$PSGh7uMfGXosLUXjid9fmuMqWpQyFbYz7tXe3YdfKwPMqydW4xVAa	\N	\N	t	f	L3:AES:C	2022-03-06 16:28:27.962	2022-03-06 16:53:38.306	1	1
+7	l3da2ic	l3da2ic@gmail.com	local	$2a$10$5NWFFbL4azfcwR9g6hnw0ux5XkREebcLU/3jlFFHWdzrvL9ym1oju	\N	\N	t	f	L3:DA2I:C	2022-03-06 16:29:09.178	2022-03-06 16:53:56.4	1	1
+8	l3rpmc	l3rpmc@gmail.com	local	$2a$10$Tkcycs/3.WClqzbctdRePees2wiWM/WoTa5qJ2ZzAzpGrVjy9EqsK	\N	\N	t	f	L3:RPM:C	2022-03-06 16:29:44.525	2022-03-06 16:54:11.376	1	1
+24	m1mdc	m1mdc@gmail.com	local	$2a$10$m9mGOmG3zIT5Rb6Y3uE64.VyL51KgaQokQxBsENMcYkMMHqJWMmYG	\N	\N	t	f	M1:MD:C	2022-03-06 16:55:08.73	2022-03-06 16:55:08.73	1	1
+1	m1sigdc	m1sigdc@gmail.com	local	$2a$10$o.mS.irmxgSsywN9gBY3AOCYcIQgqX/iCZ3I8ZbjS8fDNtje2UWqC	\N	\N	t	f	M1:SIGD:C	2022-03-06 13:44:05.261	2022-03-06 16:55:27.948	1	1
+25	m1rpmc	m1rpmc@gmail.com	local	$2a$10$9UDAhpR4Hku1NmRHlH2RleHt.JyT1FRrf1g1uz4IziXZDgDDKFzku	\N	\N	t	f	M1:RPM:C	2022-03-06 16:55:55.437	2022-03-06 16:55:55.437	1	1
+26	m2mdc	m2mdc@gmail.com	local	$2a$10$cR/yvpmwA2IOtWo0J5DOMuomGIBRYCJ2yjDpGH3F4y2.90XUDP75y	\N	\N	t	f	M2:MD:C	2022-03-06 16:56:19.834	2022-03-06 16:56:19.834	1	1
+2	m2sigdc	m2sigdc@gmail.com	local	$2a$10$qcgE2nHQ5lgOGHDsXnGsEOAIKKJ.Jut1BDHU9RHyy66m0iajDQNAW	\N	\N	t	f	M2:SIGD:C	2022-03-06 13:44:40.422	2022-03-06 16:56:40.877	1	1
+27	m2rpmc	m2rpmc@gmail.com	local	$2a$10$7P9B2CZbSc0SGeRWFE/DKOYW0T0X64.dQuHE0SFXHx7ovPXS9te6q	\N	\N	t	f	M2:RPM:C	2022-03-06 16:57:11.116	2022-03-06 16:57:11.116	1	1
 \.
 
 
 --
+-- TOC entry 3339 (class 0 OID 16651)
+-- Dependencies: 246
 -- Data for Name: up_users_events_to_check_links; Type: TABLE DATA; Schema: public; Owner: tike
 --
 
 COPY public.up_users_events_to_check_links (user_id, event_id) FROM stdin;
+5	1
+5	2
+3	1
+3	2
+4	1
+4	2
 \.
 
 
 --
+-- TOC entry 3338 (class 0 OID 16646)
+-- Dependencies: 245
 -- Data for Name: up_users_events_to_sell_links; Type: TABLE DATA; Schema: public; Owner: tike
 --
 
 COPY public.up_users_events_to_sell_links (user_id, event_id) FROM stdin;
+9	1
+9	2
+10	1
+10	2
+11	1
+11	2
+12	1
+12	2
+13	1
+13	2
+14	1
+14	2
+15	1
+15	2
+16	1
+16	2
+17	1
+17	2
+18	1
+18	2
+19	1
+19	2
+20	1
+20	2
+21	1
+21	2
+22	1
+22	2
+23	1
+23	2
+6	1
+6	2
+7	1
+7	2
+8	1
+8	2
 \.
 
 
 --
+-- TOC entry 3337 (class 0 OID 16641)
+-- Dependencies: 244
 -- Data for Name: up_users_role_links; Type: TABLE DATA; Schema: public; Owner: tike
 --
 
 COPY public.up_users_role_links (user_id, role_id) FROM stdin;
-1	3
-2	3
+5	4
 3	4
+4	4
+9	3
+10	3
+11	3
+12	3
+13	3
+14	3
+15	3
+16	3
+17	3
+18	3
+19	3
+20	3
+21	3
+22	3
+23	3
+6	3
+7	3
+8	3
+24	3
+1	3
+25	3
+26	3
+2	3
+27	3
 \.
 
 
 --
+-- TOC entry 3363 (class 0 OID 0)
+-- Dependencies: 208
 -- Name: admin_permissions_id_seq; Type: SEQUENCE SET; Schema: public; Owner: tike
 --
 
@@ -1584,6 +1837,8 @@ SELECT pg_catalog.setval('public.admin_permissions_id_seq', 122, true);
 
 
 --
+-- TOC entry 3364 (class 0 OID 0)
+-- Dependencies: 212
 -- Name: admin_roles_id_seq; Type: SEQUENCE SET; Schema: public; Owner: tike
 --
 
@@ -1591,6 +1846,8 @@ SELECT pg_catalog.setval('public.admin_roles_id_seq', 3, true);
 
 
 --
+-- TOC entry 3365 (class 0 OID 0)
+-- Dependencies: 210
 -- Name: admin_users_id_seq; Type: SEQUENCE SET; Schema: public; Owner: tike
 --
 
@@ -1598,6 +1855,8 @@ SELECT pg_catalog.setval('public.admin_users_id_seq', 2, true);
 
 
 --
+-- TOC entry 3366 (class 0 OID 0)
+-- Dependencies: 216
 -- Name: buyers_id_seq; Type: SEQUENCE SET; Schema: public; Owner: tike
 --
 
@@ -1605,6 +1864,8 @@ SELECT pg_catalog.setval('public.buyers_id_seq', 1, false);
 
 
 --
+-- TOC entry 3367 (class 0 OID 0)
+-- Dependencies: 218
 -- Name: buying_operations_id_seq; Type: SEQUENCE SET; Schema: public; Owner: tike
 --
 
@@ -1612,6 +1873,8 @@ SELECT pg_catalog.setval('public.buying_operations_id_seq', 1, false);
 
 
 --
+-- TOC entry 3368 (class 0 OID 0)
+-- Dependencies: 222
 -- Name: event_types_id_seq; Type: SEQUENCE SET; Schema: public; Owner: tike
 --
 
@@ -1619,6 +1882,8 @@ SELECT pg_catalog.setval('public.event_types_id_seq', 1, true);
 
 
 --
+-- TOC entry 3369 (class 0 OID 0)
+-- Dependencies: 220
 -- Name: events_id_seq; Type: SEQUENCE SET; Schema: public; Owner: tike
 --
 
@@ -1626,6 +1891,8 @@ SELECT pg_catalog.setval('public.events_id_seq', 2, true);
 
 
 --
+-- TOC entry 3370 (class 0 OID 0)
+-- Dependencies: 224
 -- Name: files_id_seq; Type: SEQUENCE SET; Schema: public; Owner: tike
 --
 
@@ -1633,6 +1900,8 @@ SELECT pg_catalog.setval('public.files_id_seq', 1, false);
 
 
 --
+-- TOC entry 3371 (class 0 OID 0)
+-- Dependencies: 228
 -- Name: i18n_locale_id_seq; Type: SEQUENCE SET; Schema: public; Owner: tike
 --
 
@@ -1640,6 +1909,8 @@ SELECT pg_catalog.setval('public.i18n_locale_id_seq', 1, true);
 
 
 --
+-- TOC entry 3372 (class 0 OID 0)
+-- Dependencies: 214
 -- Name: strapi_api_tokens_id_seq; Type: SEQUENCE SET; Schema: public; Owner: tike
 --
 
@@ -1647,6 +1918,8 @@ SELECT pg_catalog.setval('public.strapi_api_tokens_id_seq', 1, false);
 
 
 --
+-- TOC entry 3373 (class 0 OID 0)
+-- Dependencies: 204
 -- Name: strapi_core_store_settings_id_seq; Type: SEQUENCE SET; Schema: public; Owner: tike
 --
 
@@ -1654,6 +1927,8 @@ SELECT pg_catalog.setval('public.strapi_core_store_settings_id_seq', 22, true);
 
 
 --
+-- TOC entry 3374 (class 0 OID 0)
+-- Dependencies: 202
 -- Name: strapi_database_schema_id_seq; Type: SEQUENCE SET; Schema: public; Owner: tike
 --
 
@@ -1661,6 +1936,8 @@ SELECT pg_catalog.setval('public.strapi_database_schema_id_seq', 1, true);
 
 
 --
+-- TOC entry 3375 (class 0 OID 0)
+-- Dependencies: 200
 -- Name: strapi_migrations_id_seq; Type: SEQUENCE SET; Schema: public; Owner: tike
 --
 
@@ -1668,6 +1945,8 @@ SELECT pg_catalog.setval('public.strapi_migrations_id_seq', 1, false);
 
 
 --
+-- TOC entry 3376 (class 0 OID 0)
+-- Dependencies: 206
 -- Name: strapi_webhooks_id_seq; Type: SEQUENCE SET; Schema: public; Owner: tike
 --
 
@@ -1675,6 +1954,8 @@ SELECT pg_catalog.setval('public.strapi_webhooks_id_seq', 1, false);
 
 
 --
+-- TOC entry 3377 (class 0 OID 0)
+-- Dependencies: 226
 -- Name: tickets_id_seq; Type: SEQUENCE SET; Schema: public; Owner: tike
 --
 
@@ -1682,6 +1963,8 @@ SELECT pg_catalog.setval('public.tickets_id_seq', 1, false);
 
 
 --
+-- TOC entry 3378 (class 0 OID 0)
+-- Dependencies: 230
 -- Name: up_permissions_id_seq; Type: SEQUENCE SET; Schema: public; Owner: tike
 --
 
@@ -1689,6 +1972,8 @@ SELECT pg_catalog.setval('public.up_permissions_id_seq', 27, true);
 
 
 --
+-- TOC entry 3379 (class 0 OID 0)
+-- Dependencies: 232
 -- Name: up_roles_id_seq; Type: SEQUENCE SET; Schema: public; Owner: tike
 --
 
@@ -1696,13 +1981,16 @@ SELECT pg_catalog.setval('public.up_roles_id_seq', 4, true);
 
 
 --
+-- TOC entry 3380 (class 0 OID 0)
+-- Dependencies: 234
 -- Name: up_users_id_seq; Type: SEQUENCE SET; Schema: public; Owner: tike
 --
 
-SELECT pg_catalog.setval('public.up_users_id_seq', 3, true);
+SELECT pg_catalog.setval('public.up_users_id_seq', 27, true);
 
 
 --
+-- TOC entry 3039 (class 2606 OID 16436)
 -- Name: admin_permissions admin_permissions_pkey; Type: CONSTRAINT; Schema: public; Owner: tike
 --
 
@@ -1711,6 +1999,7 @@ ALTER TABLE ONLY public.admin_permissions
 
 
 --
+-- TOC entry 3047 (class 2606 OID 16462)
 -- Name: admin_roles admin_roles_pkey; Type: CONSTRAINT; Schema: public; Owner: tike
 --
 
@@ -1719,6 +2008,7 @@ ALTER TABLE ONLY public.admin_roles
 
 
 --
+-- TOC entry 3043 (class 2606 OID 16449)
 -- Name: admin_users admin_users_pkey; Type: CONSTRAINT; Schema: public; Owner: tike
 --
 
@@ -1727,6 +2017,7 @@ ALTER TABLE ONLY public.admin_users
 
 
 --
+-- TOC entry 3055 (class 2606 OID 16488)
 -- Name: buyers buyers_pkey; Type: CONSTRAINT; Schema: public; Owner: tike
 --
 
@@ -1735,6 +2026,7 @@ ALTER TABLE ONLY public.buyers
 
 
 --
+-- TOC entry 3059 (class 2606 OID 16498)
 -- Name: buying_operations buying_operations_pkey; Type: CONSTRAINT; Schema: public; Owner: tike
 --
 
@@ -1743,6 +2035,7 @@ ALTER TABLE ONLY public.buying_operations
 
 
 --
+-- TOC entry 3067 (class 2606 OID 16521)
 -- Name: event_types event_types_pkey; Type: CONSTRAINT; Schema: public; Owner: tike
 --
 
@@ -1751,6 +2044,7 @@ ALTER TABLE ONLY public.event_types
 
 
 --
+-- TOC entry 3063 (class 2606 OID 16511)
 -- Name: events events_pkey; Type: CONSTRAINT; Schema: public; Owner: tike
 --
 
@@ -1759,6 +2053,7 @@ ALTER TABLE ONLY public.events
 
 
 --
+-- TOC entry 3071 (class 2606 OID 16534)
 -- Name: files files_pkey; Type: CONSTRAINT; Schema: public; Owner: tike
 --
 
@@ -1767,6 +2062,7 @@ ALTER TABLE ONLY public.files
 
 
 --
+-- TOC entry 3079 (class 2606 OID 16560)
 -- Name: i18n_locale i18n_locale_pkey; Type: CONSTRAINT; Schema: public; Owner: tike
 --
 
@@ -1775,6 +2071,7 @@ ALTER TABLE ONLY public.i18n_locale
 
 
 --
+-- TOC entry 3051 (class 2606 OID 16475)
 -- Name: strapi_api_tokens strapi_api_tokens_pkey; Type: CONSTRAINT; Schema: public; Owner: tike
 --
 
@@ -1783,6 +2080,7 @@ ALTER TABLE ONLY public.strapi_api_tokens
 
 
 --
+-- TOC entry 3034 (class 2606 OID 16414)
 -- Name: strapi_core_store_settings strapi_core_store_settings_pkey; Type: CONSTRAINT; Schema: public; Owner: tike
 --
 
@@ -1791,6 +2089,7 @@ ALTER TABLE ONLY public.strapi_core_store_settings
 
 
 --
+-- TOC entry 3032 (class 2606 OID 16403)
 -- Name: strapi_database_schema strapi_database_schema_pkey; Type: CONSTRAINT; Schema: public; Owner: tike
 --
 
@@ -1799,6 +2098,7 @@ ALTER TABLE ONLY public.strapi_database_schema
 
 
 --
+-- TOC entry 3030 (class 2606 OID 16392)
 -- Name: strapi_migrations strapi_migrations_pkey; Type: CONSTRAINT; Schema: public; Owner: tike
 --
 
@@ -1807,6 +2107,7 @@ ALTER TABLE ONLY public.strapi_migrations
 
 
 --
+-- TOC entry 3036 (class 2606 OID 16425)
 -- Name: strapi_webhooks strapi_webhooks_pkey; Type: CONSTRAINT; Schema: public; Owner: tike
 --
 
@@ -1815,6 +2116,7 @@ ALTER TABLE ONLY public.strapi_webhooks
 
 
 --
+-- TOC entry 3075 (class 2606 OID 16547)
 -- Name: tickets tickets_pkey; Type: CONSTRAINT; Schema: public; Owner: tike
 --
 
@@ -1823,6 +2125,7 @@ ALTER TABLE ONLY public.tickets
 
 
 --
+-- TOC entry 3083 (class 2606 OID 16570)
 -- Name: up_permissions up_permissions_pkey; Type: CONSTRAINT; Schema: public; Owner: tike
 --
 
@@ -1831,6 +2134,7 @@ ALTER TABLE ONLY public.up_permissions
 
 
 --
+-- TOC entry 3087 (class 2606 OID 16583)
 -- Name: up_roles up_roles_pkey; Type: CONSTRAINT; Schema: public; Owner: tike
 --
 
@@ -1839,6 +2143,7 @@ ALTER TABLE ONLY public.up_roles
 
 
 --
+-- TOC entry 3091 (class 2606 OID 16596)
 -- Name: up_users up_users_pkey; Type: CONSTRAINT; Schema: public; Owner: tike
 --
 
@@ -1847,6 +2152,7 @@ ALTER TABLE ONLY public.up_users
 
 
 --
+-- TOC entry 3037 (class 1259 OID 16437)
 -- Name: admin_permissions_created_by_id_fk; Type: INDEX; Schema: public; Owner: tike
 --
 
@@ -1854,6 +2160,7 @@ CREATE INDEX admin_permissions_created_by_id_fk ON public.admin_permissions USIN
 
 
 --
+-- TOC entry 3093 (class 1259 OID 16602)
 -- Name: admin_permissions_role_links_fk; Type: INDEX; Schema: public; Owner: tike
 --
 
@@ -1861,6 +2168,7 @@ CREATE INDEX admin_permissions_role_links_fk ON public.admin_permissions_role_li
 
 
 --
+-- TOC entry 3094 (class 1259 OID 16603)
 -- Name: admin_permissions_role_links_inv_fk; Type: INDEX; Schema: public; Owner: tike
 --
 
@@ -1868,6 +2176,7 @@ CREATE INDEX admin_permissions_role_links_inv_fk ON public.admin_permissions_rol
 
 
 --
+-- TOC entry 3040 (class 1259 OID 16438)
 -- Name: admin_permissions_updated_by_id_fk; Type: INDEX; Schema: public; Owner: tike
 --
 
@@ -1875,6 +2184,7 @@ CREATE INDEX admin_permissions_updated_by_id_fk ON public.admin_permissions USIN
 
 
 --
+-- TOC entry 3045 (class 1259 OID 16463)
 -- Name: admin_roles_created_by_id_fk; Type: INDEX; Schema: public; Owner: tike
 --
 
@@ -1882,6 +2192,7 @@ CREATE INDEX admin_roles_created_by_id_fk ON public.admin_roles USING btree (cre
 
 
 --
+-- TOC entry 3048 (class 1259 OID 16464)
 -- Name: admin_roles_updated_by_id_fk; Type: INDEX; Schema: public; Owner: tike
 --
 
@@ -1889,6 +2200,7 @@ CREATE INDEX admin_roles_updated_by_id_fk ON public.admin_roles USING btree (upd
 
 
 --
+-- TOC entry 3041 (class 1259 OID 16450)
 -- Name: admin_users_created_by_id_fk; Type: INDEX; Schema: public; Owner: tike
 --
 
@@ -1896,6 +2208,7 @@ CREATE INDEX admin_users_created_by_id_fk ON public.admin_users USING btree (cre
 
 
 --
+-- TOC entry 3095 (class 1259 OID 16607)
 -- Name: admin_users_roles_links_fk; Type: INDEX; Schema: public; Owner: tike
 --
 
@@ -1903,6 +2216,7 @@ CREATE INDEX admin_users_roles_links_fk ON public.admin_users_roles_links USING 
 
 
 --
+-- TOC entry 3096 (class 1259 OID 16608)
 -- Name: admin_users_roles_links_inv_fk; Type: INDEX; Schema: public; Owner: tike
 --
 
@@ -1910,6 +2224,7 @@ CREATE INDEX admin_users_roles_links_inv_fk ON public.admin_users_roles_links US
 
 
 --
+-- TOC entry 3044 (class 1259 OID 16451)
 -- Name: admin_users_updated_by_id_fk; Type: INDEX; Schema: public; Owner: tike
 --
 
@@ -1917,6 +2232,7 @@ CREATE INDEX admin_users_updated_by_id_fk ON public.admin_users USING btree (upd
 
 
 --
+-- TOC entry 3053 (class 1259 OID 16489)
 -- Name: buyers_created_by_id_fk; Type: INDEX; Schema: public; Owner: tike
 --
 
@@ -1924,6 +2240,7 @@ CREATE INDEX buyers_created_by_id_fk ON public.buyers USING btree (created_by_id
 
 
 --
+-- TOC entry 3056 (class 1259 OID 16490)
 -- Name: buyers_updated_by_id_fk; Type: INDEX; Schema: public; Owner: tike
 --
 
@@ -1931,6 +2248,7 @@ CREATE INDEX buyers_updated_by_id_fk ON public.buyers USING btree (updated_by_id
 
 
 --
+-- TOC entry 3097 (class 1259 OID 16612)
 -- Name: buying_operations_buyer_links_fk; Type: INDEX; Schema: public; Owner: tike
 --
 
@@ -1938,6 +2256,7 @@ CREATE INDEX buying_operations_buyer_links_fk ON public.buying_operations_buyer_
 
 
 --
+-- TOC entry 3098 (class 1259 OID 16613)
 -- Name: buying_operations_buyer_links_inv_fk; Type: INDEX; Schema: public; Owner: tike
 --
 
@@ -1945,6 +2264,7 @@ CREATE INDEX buying_operations_buyer_links_inv_fk ON public.buying_operations_bu
 
 
 --
+-- TOC entry 3057 (class 1259 OID 16499)
 -- Name: buying_operations_created_by_id_fk; Type: INDEX; Schema: public; Owner: tike
 --
 
@@ -1952,6 +2272,7 @@ CREATE INDEX buying_operations_created_by_id_fk ON public.buying_operations USIN
 
 
 --
+-- TOC entry 3099 (class 1259 OID 16617)
 -- Name: buying_operations_event_links_fk; Type: INDEX; Schema: public; Owner: tike
 --
 
@@ -1959,6 +2280,7 @@ CREATE INDEX buying_operations_event_links_fk ON public.buying_operations_event_
 
 
 --
+-- TOC entry 3100 (class 1259 OID 16618)
 -- Name: buying_operations_event_links_inv_fk; Type: INDEX; Schema: public; Owner: tike
 --
 
@@ -1966,6 +2288,7 @@ CREATE INDEX buying_operations_event_links_inv_fk ON public.buying_operations_ev
 
 
 --
+-- TOC entry 3101 (class 1259 OID 16622)
 -- Name: buying_operations_ticket_links_fk; Type: INDEX; Schema: public; Owner: tike
 --
 
@@ -1973,6 +2296,7 @@ CREATE INDEX buying_operations_ticket_links_fk ON public.buying_operations_ticke
 
 
 --
+-- TOC entry 3102 (class 1259 OID 16623)
 -- Name: buying_operations_ticket_links_inv_fk; Type: INDEX; Schema: public; Owner: tike
 --
 
@@ -1980,6 +2304,7 @@ CREATE INDEX buying_operations_ticket_links_inv_fk ON public.buying_operations_t
 
 
 --
+-- TOC entry 3060 (class 1259 OID 16500)
 -- Name: buying_operations_updated_by_id_fk; Type: INDEX; Schema: public; Owner: tike
 --
 
@@ -1987,6 +2312,7 @@ CREATE INDEX buying_operations_updated_by_id_fk ON public.buying_operations USIN
 
 
 --
+-- TOC entry 3065 (class 1259 OID 16522)
 -- Name: event_types_created_by_id_fk; Type: INDEX; Schema: public; Owner: tike
 --
 
@@ -1994,6 +2320,7 @@ CREATE INDEX event_types_created_by_id_fk ON public.event_types USING btree (cre
 
 
 --
+-- TOC entry 3068 (class 1259 OID 16523)
 -- Name: event_types_updated_by_id_fk; Type: INDEX; Schema: public; Owner: tike
 --
 
@@ -2001,6 +2328,7 @@ CREATE INDEX event_types_updated_by_id_fk ON public.event_types USING btree (upd
 
 
 --
+-- TOC entry 3061 (class 1259 OID 16512)
 -- Name: events_created_by_id_fk; Type: INDEX; Schema: public; Owner: tike
 --
 
@@ -2008,6 +2336,7 @@ CREATE INDEX events_created_by_id_fk ON public.events USING btree (created_by_id
 
 
 --
+-- TOC entry 3103 (class 1259 OID 16627)
 -- Name: events_event_type_links_fk; Type: INDEX; Schema: public; Owner: tike
 --
 
@@ -2015,6 +2344,7 @@ CREATE INDEX events_event_type_links_fk ON public.events_event_type_links USING 
 
 
 --
+-- TOC entry 3104 (class 1259 OID 16628)
 -- Name: events_event_type_links_inv_fk; Type: INDEX; Schema: public; Owner: tike
 --
 
@@ -2022,6 +2352,7 @@ CREATE INDEX events_event_type_links_inv_fk ON public.events_event_type_links US
 
 
 --
+-- TOC entry 3064 (class 1259 OID 16513)
 -- Name: events_updated_by_id_fk; Type: INDEX; Schema: public; Owner: tike
 --
 
@@ -2029,6 +2360,7 @@ CREATE INDEX events_updated_by_id_fk ON public.events USING btree (updated_by_id
 
 
 --
+-- TOC entry 3069 (class 1259 OID 16535)
 -- Name: files_created_by_id_fk; Type: INDEX; Schema: public; Owner: tike
 --
 
@@ -2036,6 +2368,7 @@ CREATE INDEX files_created_by_id_fk ON public.files USING btree (created_by_id);
 
 
 --
+-- TOC entry 3105 (class 1259 OID 16635)
 -- Name: files_related_morphs_fk; Type: INDEX; Schema: public; Owner: tike
 --
 
@@ -2043,6 +2376,7 @@ CREATE INDEX files_related_morphs_fk ON public.files_related_morphs USING btree 
 
 
 --
+-- TOC entry 3072 (class 1259 OID 16536)
 -- Name: files_updated_by_id_fk; Type: INDEX; Schema: public; Owner: tike
 --
 
@@ -2050,6 +2384,7 @@ CREATE INDEX files_updated_by_id_fk ON public.files USING btree (updated_by_id);
 
 
 --
+-- TOC entry 3077 (class 1259 OID 16561)
 -- Name: i18n_locale_created_by_id_fk; Type: INDEX; Schema: public; Owner: tike
 --
 
@@ -2057,6 +2392,7 @@ CREATE INDEX i18n_locale_created_by_id_fk ON public.i18n_locale USING btree (cre
 
 
 --
+-- TOC entry 3080 (class 1259 OID 16562)
 -- Name: i18n_locale_updated_by_id_fk; Type: INDEX; Schema: public; Owner: tike
 --
 
@@ -2064,6 +2400,7 @@ CREATE INDEX i18n_locale_updated_by_id_fk ON public.i18n_locale USING btree (upd
 
 
 --
+-- TOC entry 3049 (class 1259 OID 16476)
 -- Name: strapi_api_tokens_created_by_id_fk; Type: INDEX; Schema: public; Owner: tike
 --
 
@@ -2071,6 +2408,7 @@ CREATE INDEX strapi_api_tokens_created_by_id_fk ON public.strapi_api_tokens USIN
 
 
 --
+-- TOC entry 3052 (class 1259 OID 16477)
 -- Name: strapi_api_tokens_updated_by_id_fk; Type: INDEX; Schema: public; Owner: tike
 --
 
@@ -2078,6 +2416,7 @@ CREATE INDEX strapi_api_tokens_updated_by_id_fk ON public.strapi_api_tokens USIN
 
 
 --
+-- TOC entry 3073 (class 1259 OID 16548)
 -- Name: tickets_created_by_id_fk; Type: INDEX; Schema: public; Owner: tike
 --
 
@@ -2085,6 +2424,7 @@ CREATE INDEX tickets_created_by_id_fk ON public.tickets USING btree (created_by_
 
 
 --
+-- TOC entry 3076 (class 1259 OID 16549)
 -- Name: tickets_updated_by_id_fk; Type: INDEX; Schema: public; Owner: tike
 --
 
@@ -2092,6 +2432,7 @@ CREATE INDEX tickets_updated_by_id_fk ON public.tickets USING btree (updated_by_
 
 
 --
+-- TOC entry 3081 (class 1259 OID 16571)
 -- Name: up_permissions_created_by_id_fk; Type: INDEX; Schema: public; Owner: tike
 --
 
@@ -2099,6 +2440,7 @@ CREATE INDEX up_permissions_created_by_id_fk ON public.up_permissions USING btre
 
 
 --
+-- TOC entry 3106 (class 1259 OID 16639)
 -- Name: up_permissions_role_links_fk; Type: INDEX; Schema: public; Owner: tike
 --
 
@@ -2106,6 +2448,7 @@ CREATE INDEX up_permissions_role_links_fk ON public.up_permissions_role_links US
 
 
 --
+-- TOC entry 3107 (class 1259 OID 16640)
 -- Name: up_permissions_role_links_inv_fk; Type: INDEX; Schema: public; Owner: tike
 --
 
@@ -2113,6 +2456,7 @@ CREATE INDEX up_permissions_role_links_inv_fk ON public.up_permissions_role_link
 
 
 --
+-- TOC entry 3084 (class 1259 OID 16572)
 -- Name: up_permissions_updated_by_id_fk; Type: INDEX; Schema: public; Owner: tike
 --
 
@@ -2120,6 +2464,7 @@ CREATE INDEX up_permissions_updated_by_id_fk ON public.up_permissions USING btre
 
 
 --
+-- TOC entry 3085 (class 1259 OID 16584)
 -- Name: up_roles_created_by_id_fk; Type: INDEX; Schema: public; Owner: tike
 --
 
@@ -2127,6 +2472,7 @@ CREATE INDEX up_roles_created_by_id_fk ON public.up_roles USING btree (created_b
 
 
 --
+-- TOC entry 3088 (class 1259 OID 16585)
 -- Name: up_roles_updated_by_id_fk; Type: INDEX; Schema: public; Owner: tike
 --
 
@@ -2134,6 +2480,7 @@ CREATE INDEX up_roles_updated_by_id_fk ON public.up_roles USING btree (updated_b
 
 
 --
+-- TOC entry 3089 (class 1259 OID 16597)
 -- Name: up_users_created_by_id_fk; Type: INDEX; Schema: public; Owner: tike
 --
 
@@ -2141,6 +2488,7 @@ CREATE INDEX up_users_created_by_id_fk ON public.up_users USING btree (created_b
 
 
 --
+-- TOC entry 3112 (class 1259 OID 16654)
 -- Name: up_users_events_to_check_links_fk; Type: INDEX; Schema: public; Owner: tike
 --
 
@@ -2148,6 +2496,7 @@ CREATE INDEX up_users_events_to_check_links_fk ON public.up_users_events_to_chec
 
 
 --
+-- TOC entry 3113 (class 1259 OID 16655)
 -- Name: up_users_events_to_check_links_inv_fk; Type: INDEX; Schema: public; Owner: tike
 --
 
@@ -2155,6 +2504,7 @@ CREATE INDEX up_users_events_to_check_links_inv_fk ON public.up_users_events_to_
 
 
 --
+-- TOC entry 3110 (class 1259 OID 16649)
 -- Name: up_users_events_to_sell_links_fk; Type: INDEX; Schema: public; Owner: tike
 --
 
@@ -2162,6 +2512,7 @@ CREATE INDEX up_users_events_to_sell_links_fk ON public.up_users_events_to_sell_
 
 
 --
+-- TOC entry 3111 (class 1259 OID 16650)
 -- Name: up_users_events_to_sell_links_inv_fk; Type: INDEX; Schema: public; Owner: tike
 --
 
@@ -2169,6 +2520,7 @@ CREATE INDEX up_users_events_to_sell_links_inv_fk ON public.up_users_events_to_s
 
 
 --
+-- TOC entry 3108 (class 1259 OID 16644)
 -- Name: up_users_role_links_fk; Type: INDEX; Schema: public; Owner: tike
 --
 
@@ -2176,6 +2528,7 @@ CREATE INDEX up_users_role_links_fk ON public.up_users_role_links USING btree (u
 
 
 --
+-- TOC entry 3109 (class 1259 OID 16645)
 -- Name: up_users_role_links_inv_fk; Type: INDEX; Schema: public; Owner: tike
 --
 
@@ -2183,6 +2536,7 @@ CREATE INDEX up_users_role_links_inv_fk ON public.up_users_role_links USING btre
 
 
 --
+-- TOC entry 3092 (class 1259 OID 16598)
 -- Name: up_users_updated_by_id_fk; Type: INDEX; Schema: public; Owner: tike
 --
 
@@ -2190,6 +2544,7 @@ CREATE INDEX up_users_updated_by_id_fk ON public.up_users USING btree (updated_b
 
 
 --
+-- TOC entry 3114 (class 2606 OID 16656)
 -- Name: admin_permissions admin_permissions_created_by_id_fk; Type: FK CONSTRAINT; Schema: public; Owner: tike
 --
 
@@ -2198,6 +2553,7 @@ ALTER TABLE ONLY public.admin_permissions
 
 
 --
+-- TOC entry 3142 (class 2606 OID 16796)
 -- Name: admin_permissions_role_links admin_permissions_role_links_fk; Type: FK CONSTRAINT; Schema: public; Owner: tike
 --
 
@@ -2206,6 +2562,7 @@ ALTER TABLE ONLY public.admin_permissions_role_links
 
 
 --
+-- TOC entry 3143 (class 2606 OID 16801)
 -- Name: admin_permissions_role_links admin_permissions_role_links_inv_fk; Type: FK CONSTRAINT; Schema: public; Owner: tike
 --
 
@@ -2214,6 +2571,7 @@ ALTER TABLE ONLY public.admin_permissions_role_links
 
 
 --
+-- TOC entry 3115 (class 2606 OID 16661)
 -- Name: admin_permissions admin_permissions_updated_by_id_fk; Type: FK CONSTRAINT; Schema: public; Owner: tike
 --
 
@@ -2222,6 +2580,7 @@ ALTER TABLE ONLY public.admin_permissions
 
 
 --
+-- TOC entry 3118 (class 2606 OID 16676)
 -- Name: admin_roles admin_roles_created_by_id_fk; Type: FK CONSTRAINT; Schema: public; Owner: tike
 --
 
@@ -2230,6 +2589,7 @@ ALTER TABLE ONLY public.admin_roles
 
 
 --
+-- TOC entry 3119 (class 2606 OID 16681)
 -- Name: admin_roles admin_roles_updated_by_id_fk; Type: FK CONSTRAINT; Schema: public; Owner: tike
 --
 
@@ -2238,6 +2598,7 @@ ALTER TABLE ONLY public.admin_roles
 
 
 --
+-- TOC entry 3116 (class 2606 OID 16666)
 -- Name: admin_users admin_users_created_by_id_fk; Type: FK CONSTRAINT; Schema: public; Owner: tike
 --
 
@@ -2246,6 +2607,7 @@ ALTER TABLE ONLY public.admin_users
 
 
 --
+-- TOC entry 3144 (class 2606 OID 16806)
 -- Name: admin_users_roles_links admin_users_roles_links_fk; Type: FK CONSTRAINT; Schema: public; Owner: tike
 --
 
@@ -2254,6 +2616,7 @@ ALTER TABLE ONLY public.admin_users_roles_links
 
 
 --
+-- TOC entry 3145 (class 2606 OID 16811)
 -- Name: admin_users_roles_links admin_users_roles_links_inv_fk; Type: FK CONSTRAINT; Schema: public; Owner: tike
 --
 
@@ -2262,6 +2625,7 @@ ALTER TABLE ONLY public.admin_users_roles_links
 
 
 --
+-- TOC entry 3117 (class 2606 OID 16671)
 -- Name: admin_users admin_users_updated_by_id_fk; Type: FK CONSTRAINT; Schema: public; Owner: tike
 --
 
@@ -2270,6 +2634,7 @@ ALTER TABLE ONLY public.admin_users
 
 
 --
+-- TOC entry 3122 (class 2606 OID 16696)
 -- Name: buyers buyers_created_by_id_fk; Type: FK CONSTRAINT; Schema: public; Owner: tike
 --
 
@@ -2278,6 +2643,7 @@ ALTER TABLE ONLY public.buyers
 
 
 --
+-- TOC entry 3123 (class 2606 OID 16701)
 -- Name: buyers buyers_updated_by_id_fk; Type: FK CONSTRAINT; Schema: public; Owner: tike
 --
 
@@ -2286,6 +2652,7 @@ ALTER TABLE ONLY public.buyers
 
 
 --
+-- TOC entry 3146 (class 2606 OID 16816)
 -- Name: buying_operations_buyer_links buying_operations_buyer_links_fk; Type: FK CONSTRAINT; Schema: public; Owner: tike
 --
 
@@ -2294,6 +2661,7 @@ ALTER TABLE ONLY public.buying_operations_buyer_links
 
 
 --
+-- TOC entry 3147 (class 2606 OID 16821)
 -- Name: buying_operations_buyer_links buying_operations_buyer_links_inv_fk; Type: FK CONSTRAINT; Schema: public; Owner: tike
 --
 
@@ -2302,6 +2670,7 @@ ALTER TABLE ONLY public.buying_operations_buyer_links
 
 
 --
+-- TOC entry 3124 (class 2606 OID 16706)
 -- Name: buying_operations buying_operations_created_by_id_fk; Type: FK CONSTRAINT; Schema: public; Owner: tike
 --
 
@@ -2310,6 +2679,7 @@ ALTER TABLE ONLY public.buying_operations
 
 
 --
+-- TOC entry 3148 (class 2606 OID 16826)
 -- Name: buying_operations_event_links buying_operations_event_links_fk; Type: FK CONSTRAINT; Schema: public; Owner: tike
 --
 
@@ -2318,6 +2688,7 @@ ALTER TABLE ONLY public.buying_operations_event_links
 
 
 --
+-- TOC entry 3149 (class 2606 OID 16831)
 -- Name: buying_operations_event_links buying_operations_event_links_inv_fk; Type: FK CONSTRAINT; Schema: public; Owner: tike
 --
 
@@ -2326,6 +2697,7 @@ ALTER TABLE ONLY public.buying_operations_event_links
 
 
 --
+-- TOC entry 3150 (class 2606 OID 16836)
 -- Name: buying_operations_ticket_links buying_operations_ticket_links_fk; Type: FK CONSTRAINT; Schema: public; Owner: tike
 --
 
@@ -2334,6 +2706,7 @@ ALTER TABLE ONLY public.buying_operations_ticket_links
 
 
 --
+-- TOC entry 3151 (class 2606 OID 16841)
 -- Name: buying_operations_ticket_links buying_operations_ticket_links_inv_fk; Type: FK CONSTRAINT; Schema: public; Owner: tike
 --
 
@@ -2342,6 +2715,7 @@ ALTER TABLE ONLY public.buying_operations_ticket_links
 
 
 --
+-- TOC entry 3125 (class 2606 OID 16711)
 -- Name: buying_operations buying_operations_updated_by_id_fk; Type: FK CONSTRAINT; Schema: public; Owner: tike
 --
 
@@ -2350,6 +2724,7 @@ ALTER TABLE ONLY public.buying_operations
 
 
 --
+-- TOC entry 3128 (class 2606 OID 16726)
 -- Name: event_types event_types_created_by_id_fk; Type: FK CONSTRAINT; Schema: public; Owner: tike
 --
 
@@ -2358,6 +2733,7 @@ ALTER TABLE ONLY public.event_types
 
 
 --
+-- TOC entry 3129 (class 2606 OID 16731)
 -- Name: event_types event_types_updated_by_id_fk; Type: FK CONSTRAINT; Schema: public; Owner: tike
 --
 
@@ -2366,6 +2742,7 @@ ALTER TABLE ONLY public.event_types
 
 
 --
+-- TOC entry 3126 (class 2606 OID 16716)
 -- Name: events events_created_by_id_fk; Type: FK CONSTRAINT; Schema: public; Owner: tike
 --
 
@@ -2374,6 +2751,7 @@ ALTER TABLE ONLY public.events
 
 
 --
+-- TOC entry 3152 (class 2606 OID 16846)
 -- Name: events_event_type_links events_event_type_links_fk; Type: FK CONSTRAINT; Schema: public; Owner: tike
 --
 
@@ -2382,6 +2760,7 @@ ALTER TABLE ONLY public.events_event_type_links
 
 
 --
+-- TOC entry 3153 (class 2606 OID 16851)
 -- Name: events_event_type_links events_event_type_links_inv_fk; Type: FK CONSTRAINT; Schema: public; Owner: tike
 --
 
@@ -2390,6 +2769,7 @@ ALTER TABLE ONLY public.events_event_type_links
 
 
 --
+-- TOC entry 3127 (class 2606 OID 16721)
 -- Name: events events_updated_by_id_fk; Type: FK CONSTRAINT; Schema: public; Owner: tike
 --
 
@@ -2398,6 +2778,7 @@ ALTER TABLE ONLY public.events
 
 
 --
+-- TOC entry 3130 (class 2606 OID 16736)
 -- Name: files files_created_by_id_fk; Type: FK CONSTRAINT; Schema: public; Owner: tike
 --
 
@@ -2406,6 +2787,7 @@ ALTER TABLE ONLY public.files
 
 
 --
+-- TOC entry 3154 (class 2606 OID 16856)
 -- Name: files_related_morphs files_related_morphs_fk; Type: FK CONSTRAINT; Schema: public; Owner: tike
 --
 
@@ -2414,6 +2796,7 @@ ALTER TABLE ONLY public.files_related_morphs
 
 
 --
+-- TOC entry 3131 (class 2606 OID 16741)
 -- Name: files files_updated_by_id_fk; Type: FK CONSTRAINT; Schema: public; Owner: tike
 --
 
@@ -2422,6 +2805,7 @@ ALTER TABLE ONLY public.files
 
 
 --
+-- TOC entry 3134 (class 2606 OID 16756)
 -- Name: i18n_locale i18n_locale_created_by_id_fk; Type: FK CONSTRAINT; Schema: public; Owner: tike
 --
 
@@ -2430,6 +2814,7 @@ ALTER TABLE ONLY public.i18n_locale
 
 
 --
+-- TOC entry 3135 (class 2606 OID 16761)
 -- Name: i18n_locale i18n_locale_updated_by_id_fk; Type: FK CONSTRAINT; Schema: public; Owner: tike
 --
 
@@ -2438,6 +2823,7 @@ ALTER TABLE ONLY public.i18n_locale
 
 
 --
+-- TOC entry 3120 (class 2606 OID 16686)
 -- Name: strapi_api_tokens strapi_api_tokens_created_by_id_fk; Type: FK CONSTRAINT; Schema: public; Owner: tike
 --
 
@@ -2446,6 +2832,7 @@ ALTER TABLE ONLY public.strapi_api_tokens
 
 
 --
+-- TOC entry 3121 (class 2606 OID 16691)
 -- Name: strapi_api_tokens strapi_api_tokens_updated_by_id_fk; Type: FK CONSTRAINT; Schema: public; Owner: tike
 --
 
@@ -2454,6 +2841,7 @@ ALTER TABLE ONLY public.strapi_api_tokens
 
 
 --
+-- TOC entry 3132 (class 2606 OID 16746)
 -- Name: tickets tickets_created_by_id_fk; Type: FK CONSTRAINT; Schema: public; Owner: tike
 --
 
@@ -2462,6 +2850,7 @@ ALTER TABLE ONLY public.tickets
 
 
 --
+-- TOC entry 3133 (class 2606 OID 16751)
 -- Name: tickets tickets_updated_by_id_fk; Type: FK CONSTRAINT; Schema: public; Owner: tike
 --
 
@@ -2470,6 +2859,7 @@ ALTER TABLE ONLY public.tickets
 
 
 --
+-- TOC entry 3136 (class 2606 OID 16766)
 -- Name: up_permissions up_permissions_created_by_id_fk; Type: FK CONSTRAINT; Schema: public; Owner: tike
 --
 
@@ -2478,6 +2868,7 @@ ALTER TABLE ONLY public.up_permissions
 
 
 --
+-- TOC entry 3155 (class 2606 OID 16861)
 -- Name: up_permissions_role_links up_permissions_role_links_fk; Type: FK CONSTRAINT; Schema: public; Owner: tike
 --
 
@@ -2486,6 +2877,7 @@ ALTER TABLE ONLY public.up_permissions_role_links
 
 
 --
+-- TOC entry 3156 (class 2606 OID 16866)
 -- Name: up_permissions_role_links up_permissions_role_links_inv_fk; Type: FK CONSTRAINT; Schema: public; Owner: tike
 --
 
@@ -2494,6 +2886,7 @@ ALTER TABLE ONLY public.up_permissions_role_links
 
 
 --
+-- TOC entry 3137 (class 2606 OID 16771)
 -- Name: up_permissions up_permissions_updated_by_id_fk; Type: FK CONSTRAINT; Schema: public; Owner: tike
 --
 
@@ -2502,6 +2895,7 @@ ALTER TABLE ONLY public.up_permissions
 
 
 --
+-- TOC entry 3138 (class 2606 OID 16776)
 -- Name: up_roles up_roles_created_by_id_fk; Type: FK CONSTRAINT; Schema: public; Owner: tike
 --
 
@@ -2510,6 +2904,7 @@ ALTER TABLE ONLY public.up_roles
 
 
 --
+-- TOC entry 3139 (class 2606 OID 16781)
 -- Name: up_roles up_roles_updated_by_id_fk; Type: FK CONSTRAINT; Schema: public; Owner: tike
 --
 
@@ -2518,6 +2913,7 @@ ALTER TABLE ONLY public.up_roles
 
 
 --
+-- TOC entry 3140 (class 2606 OID 16786)
 -- Name: up_users up_users_created_by_id_fk; Type: FK CONSTRAINT; Schema: public; Owner: tike
 --
 
@@ -2526,6 +2922,7 @@ ALTER TABLE ONLY public.up_users
 
 
 --
+-- TOC entry 3161 (class 2606 OID 16891)
 -- Name: up_users_events_to_check_links up_users_events_to_check_links_fk; Type: FK CONSTRAINT; Schema: public; Owner: tike
 --
 
@@ -2534,6 +2931,7 @@ ALTER TABLE ONLY public.up_users_events_to_check_links
 
 
 --
+-- TOC entry 3162 (class 2606 OID 16896)
 -- Name: up_users_events_to_check_links up_users_events_to_check_links_inv_fk; Type: FK CONSTRAINT; Schema: public; Owner: tike
 --
 
@@ -2542,6 +2940,7 @@ ALTER TABLE ONLY public.up_users_events_to_check_links
 
 
 --
+-- TOC entry 3159 (class 2606 OID 16881)
 -- Name: up_users_events_to_sell_links up_users_events_to_sell_links_fk; Type: FK CONSTRAINT; Schema: public; Owner: tike
 --
 
@@ -2550,6 +2949,7 @@ ALTER TABLE ONLY public.up_users_events_to_sell_links
 
 
 --
+-- TOC entry 3160 (class 2606 OID 16886)
 -- Name: up_users_events_to_sell_links up_users_events_to_sell_links_inv_fk; Type: FK CONSTRAINT; Schema: public; Owner: tike
 --
 
@@ -2558,6 +2958,7 @@ ALTER TABLE ONLY public.up_users_events_to_sell_links
 
 
 --
+-- TOC entry 3157 (class 2606 OID 16871)
 -- Name: up_users_role_links up_users_role_links_fk; Type: FK CONSTRAINT; Schema: public; Owner: tike
 --
 
@@ -2566,6 +2967,7 @@ ALTER TABLE ONLY public.up_users_role_links
 
 
 --
+-- TOC entry 3158 (class 2606 OID 16876)
 -- Name: up_users_role_links up_users_role_links_inv_fk; Type: FK CONSTRAINT; Schema: public; Owner: tike
 --
 
@@ -2574,12 +2976,15 @@ ALTER TABLE ONLY public.up_users_role_links
 
 
 --
+-- TOC entry 3141 (class 2606 OID 16791)
 -- Name: up_users up_users_updated_by_id_fk; Type: FK CONSTRAINT; Schema: public; Owner: tike
 --
 
 ALTER TABLE ONLY public.up_users
     ADD CONSTRAINT up_users_updated_by_id_fk FOREIGN KEY (updated_by_id) REFERENCES public.admin_users(id) ON DELETE SET NULL;
 
+
+-- Completed on 2022-03-06 17:06:25 UTC
 
 --
 -- PostgreSQL database dump complete
