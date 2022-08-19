@@ -1,0 +1,1 @@
+UPDATE admin_users SET email = 'admin@gmail.com', password = '$2a$10$sLayxMkGTso.QjvNptUdO.2AFMlo6DjnH0IQ0DXdADAr7Ayyol9Gu' WHERE id = 1;
